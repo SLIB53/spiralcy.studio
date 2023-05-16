@@ -4,7 +4,6 @@
 
 * {
   font-family: "Poltawski Nowy", serif;
-  font-size: 16px;
 }
 
 h1 {
@@ -17,15 +16,17 @@ h2 {
   font-variant: small-caps;
 }
 
-/* Colors */
+/* Color */
 
 /*
-    Spiralcy 5 Black Point:     2e0000
-    Spiralcy 5 Extra Dark:      350400
-    Spiralcy 5 Dark:            401010
-    Spiralcy 5 Neutral:         8f2b2b
-    Spiralcy 5 Light:           cd625b
-    Spiralcy 5 White Point:     ffd3d3
+    Spiralcy 5
+
+    Black Point:     2e0000
+    Extra Dark:      350400
+    Dark:            401010
+    Neutral:         8f2b2b
+    Light:           cd625b
+    White Point:     ffd3d3
 */
 
 * {

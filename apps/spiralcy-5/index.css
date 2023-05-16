@@ -1,43 +1,87 @@
-html {
-  height: 100%;
-}
+/* Layout */
 
 body {
-  height: 100%;
   margin: 0;
-  display: flex;
-  justify-content: center;
-  align-items: baseline;
+  padding: 0;
 }
 
-body > * {
-  top: 38%;
-  display: flex;
-  flex-direction: column;
-  text-align: center;
-}
+@media screen and (min-width: 89rem) {
+  /* Layout */
 
-body > header {
-  width: 33%;
-  position: fixed;
-  left: 0;
-}
+  html {
+    height: 100%;
+  }
 
-body > main {
-  width: 34%;
-  position: relative;
-}
+  .thirds-container > .first-third {
+    width: 33%;
+  }
 
-body > footer {
-  width: 33%;
-  position: fixed;
-  right: 0;
-}
+  .thirds-container > .second-third {
+    width: 34%;
+  }
 
-body > * > section {
-  width: 100%;
-}
+  .thirds-container > .third-third {
+    width: 33%;
+  }
 
-body > * > section > *:first-child {
-  margin-top: 0;
+  .thirds-container.content {
+    height: 100%;
+    display: flex;
+    justify-content: center;
+  }
+
+  .thirds-container.content > .third {
+    top: 38%;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .thirds-container.content > .first-third {
+    position: fixed;
+    left: 0;
+  }
+
+  .thirds-container.content > .second-third {
+    position: relative;
+  }
+
+  .thirds-container.content > .third-third {
+    position: fixed;
+    right: 0;
+  }
+
+  .thirds-container.content > .third > section {
+    width: 100%;
+  }
+
+  .thirds-container.content > .third > section > *:first-child {
+    margin-top: 0;
+  }
+
+  .thirds-container.underlay {
+    z-index: -1;
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    display: flex;
+  }
+
+  .thirds-container.underlay > .third {
+    height: 100%;
+  }
+
+  /* Color */
+
+  .thirds-container.underlay > .first-third {
+    background-color: #350400;
+  }
+
+  .thirds-container.underlay > .second-third {
+    background-color: #401010;
+  }
+
+  .thirds-container.underlay > .third-third {
+    background-color: #350400;
+  }
 }
