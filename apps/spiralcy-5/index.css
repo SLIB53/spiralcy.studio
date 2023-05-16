@@ -1,0 +1,43 @@
+html {
+  height: 100%;
+}
+
+body {
+  height: 100%;
+  margin: 0;
+  display: flex;
+  justify-content: center;
+  align-items: baseline;
+}
+
+body > * {
+  top: 38%;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+}
+
+body > header {
+  width: 33%;
+  position: fixed;
+  left: 0;
+}
+
+body > main {
+  width: 34%;
+  position: relative;
+}
+
+body > footer {
+  width: 33%;
+  position: fixed;
+  right: 0;
+}
+
+body > * > section {
+  width: 100%;
+}
+
+body > * > section > *:first-child {
+  margin-top: 0;
+}
