@@ -1,0 +1,89 @@
+@media screen and (min-width: 89rem) {
+  /* Layout */
+
+  html {
+    height: 100%;
+  }
+
+  body {
+    margin: 0;
+  }
+
+  .thirds-container > .first-third {
+    width: 33%;
+  }
+
+  .thirds-container > .second-third {
+    width: 34%;
+  }
+
+  .thirds-container > .third-third {
+    width: 33%;
+  }
+
+  .thirds-container.content {
+    display: flex;
+    height: 100%;
+    justify-content: center;
+  }
+
+  .thirds-container.content > .third {
+    top: 38%;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .thirds-container.content > .first-third {
+    position: fixed;
+    left: 0;
+  }
+
+  .thirds-container.content > .second-third {
+    position: relative;
+  }
+
+  .thirds-container.content > .third-third {
+    position: fixed;
+    right: 0;
+  }
+
+  .thirds-container.content > .third > section {
+    width: 100%;
+  }
+
+  .thirds-container.content > .third > section > *:first-child {
+    margin-top: 0;
+  }
+
+  .thirds-container.underlay {
+    z-index: -1;
+    position: fixed;
+    display: flex;
+    width: 100%;
+    height: 100%;
+  }
+
+  .thirds-container.underlay > .third {
+    height: 100%;
+  }
+
+  /* Color */
+
+  .thirds-container.underlay > .first-third {
+    background-color: #2e0000;
+    background-image: url("./assets/global/spiralcy-hero-159f68e-crunch.png");
+    background-position: center;
+    background-size: cover;
+  }
+
+  .thirds-container.underlay > .second-third {
+    background-color: #401010;
+  }
+
+  .thirds-container.underlay > .third-third {
+    background-color: #2e0000;
+    background-image: url("./assets/spiralcy-checkers-bg.svg");
+    background-position: center;
+  }
+}

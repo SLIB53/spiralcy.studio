@@ -1,0 +1,71 @@
+@media screen and (min-width: 13rem) and (max-width: 89rem) {
+  /* Layout */
+
+  html {
+    height: 100%;
+  }
+
+  body {
+    margin: 0;
+  }
+
+  .thirds-container.content {
+    height: 100%;
+  }
+
+  .thirds-container.content > .third {
+    width: 100%;
+    text-align: center;
+  }
+
+  .thirds-container.content > .third > section > *:first-child {
+    margin-top: 0;
+  }
+
+  .thirds-container.content > .first-third,
+  .thirds-container.content > .first-third > section {
+    height: 100%;
+  }
+
+  .thirds-container.content > .first-third > section > #logo {
+    position: sticky;
+    top: 38%;
+    margin: 0rem 0rem 3rem 0rem;
+  }
+
+  .thirds-container.content > .second-third {
+    min-height: 62%;
+    padding: 3rem 0rem 8rem 0rem;
+  }
+
+  .thirds-container.content > .second-third > section {
+    padding: 0rem 2rem;
+  }
+
+  .thirds-container.content > .third-third {
+    bottom: 0;
+    padding: 1rem 0rem;
+    position: fixed;
+  }
+
+  /* Color */
+
+  body {
+    background-color: #2e0000;
+  }
+
+  .thirds-container.content > .first-third {
+    background-color: #2e0000;
+    background-image: url("./assets/global/spiralcy-hero-159f68e-crunch.png");
+    background-position: center;
+    background-size: cover;
+  }
+
+  .thirds-container.content > .second-third {
+    background-color: #401010;
+  }
+
+  .thirds-container.content > .third-third {
+    background-color: #2e0000;
+  }
+}
