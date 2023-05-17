@@ -1,4 +1,4 @@
-@media (orientation: portrait) and (min-width: 13rem) {
+@media screen and (min-width: 13rem) and (max-width: 89rem) {
   /* Layout */
 
   html {
@@ -94,6 +94,8 @@
 
   /* Animation */
 
+  /* first third animation */
+
   * {
     animation-fill-mode: backwards;
   }
@@ -109,6 +111,20 @@
     }
   }
 
+  @media screen and (orientation: portrait) {
+    .thirds-container.content > .first-third {
+      animation-name: first-third-slide-portrait-orientation;
+    }
+
+    @keyframes first-third-slide-portrait-orientation {
+      from {
+        background-position-x: 47%;
+      }
+    }
+  }
+
+  /* thirds seperator animation */
+
   .thirds-container.content > .thirds-separator {
     animation-duration: 500ms;
     animation-name: thirds-separator-slide;
@@ -120,6 +136,20 @@
     }
   }
 
+  @media screen and (orientation: portrait) {
+    .thirds-container.content > .thirds-separator {
+      animation-name: thirds-separator-slide-portrait-orientation;
+    }
+
+    @keyframes thirds-separator-slide-portrait-orientation {
+      from {
+        background-position-x: 47%;
+      }
+    }
+  }
+
+  /* logo animation */
+
   #logo {
     filter: blur(0px);
     animation-duration: 500ms;
@@ -129,6 +159,18 @@
   @keyframes logo-blur-portrait {
     from {
       filter: blur(100px);
+    }
+  }
+
+  @media screen and (orientation: portrait) {
+    #logo {
+      animation-name: logo-blur-portrait-orientation;
+    }
+
+    @keyframes logo-blur-portrait-orientation {
+      from {
+        filter: blur(100px);
+      }
     }
   }
 }

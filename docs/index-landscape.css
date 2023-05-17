@@ -1,4 +1,4 @@
-@media (orientation: landscape) {
+@media screen and (min-width: 89rem) {
   /* Layout */
 
   html {
