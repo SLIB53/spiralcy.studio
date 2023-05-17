@@ -105,6 +105,11 @@
 
   .thirds-container.underlay > .second-third {
     background-color: #401010;
+    border-width: 0;
+    border-style: solid;
+    border-color: #2e0000;
+    border-top-right-radius: 20px;
+    border-bottom-right-radius: 20px;
   }
 
   .thirds-container.underlay > .third-third {

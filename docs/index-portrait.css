@@ -57,18 +57,12 @@
 
   .thirds-container.content > .third-third {
     z-index: 2;
-    position: fixed;
-    bottom: 0;
     padding: 2rem 0rem;
   }
 
   /*
     Color
   */
-
-  body {
-    background-color: #2e0000;
-  }
 
   .thirds-container.content > .first-third {
     background-color: #2e0000;
@@ -86,6 +80,11 @@
 
   .thirds-container.content > .second-third {
     background-color: #401010;
+    border-width: 0;
+    border-style: solid;
+    border-color: #2e0000;
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
   }
 
   .thirds-container.content > .third-third {
