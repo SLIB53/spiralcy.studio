@@ -1,5 +1,7 @@
 @media screen and (min-width: 13rem) and (max-width: 89rem) {
-  /* Layout */
+  /*
+    Layout
+  */
 
   html {
     height: 100%;
@@ -60,7 +62,9 @@
     padding: 2rem 0rem;
   }
 
-  /* Color */
+  /*
+    Color
+  */
 
   body {
     background-color: #2e0000;
@@ -92,13 +96,15 @@
     display: none;
   }
 
-  /* Animation */
-
-  /* first third animation */
+  /*
+    Animation
+  */
 
   * {
     animation-fill-mode: backwards;
   }
+
+  /* first third animation */
 
   .thirds-container.content > .first-third {
     animation-duration: 500ms;
@@ -136,7 +142,7 @@
     }
   }
 
-  @media screen and (orientation: portrait) {
+  @media (orientation: portrait) {
     .thirds-container.content > .thirds-separator {
       animation-name: thirds-separator-slide-portrait-orientation;
     }
@@ -162,7 +168,7 @@
     }
   }
 
-  @media screen and (orientation: portrait) {
+  @media (orientation: portrait) {
     #logo {
       animation-name: logo-blur-portrait-orientation;
     }

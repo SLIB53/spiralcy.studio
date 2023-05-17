@@ -1,5 +1,7 @@
 @media screen and (min-width: 89rem) {
-  /* Layout */
+  /*
+    Layout
+  */
 
   html {
     height: 100%;
@@ -84,7 +86,9 @@
     left: -25px;
   }
 
-  /* Color */
+  /*
+    Color
+  */
 
   .thirds-container.underlay > .first-third {
     background-color: #2e0000;
@@ -107,11 +111,15 @@
     background-color: #2e0000;
   }
 
-  /* Animation */
+  /*
+    Animation
+  */
 
   * {
     animation-fill-mode: backwards;
   }
+
+  /* first third animation */
 
   .thirds-container.underlay > .first-third {
     animation-duration: 500ms;
@@ -124,6 +132,8 @@
     }
   }
 
+  /* thirds seperator animation */
+
   .thirds-container.underlay > .third > .thirds-separator {
     animation-duration: 500ms;
     animation-name: thirds-separator-slide;
@@ -134,6 +144,8 @@
       background-position-y: 47%;
     }
   }
+
+  /* logo animation */
 
   #logo {
     filter: blur(0px);
