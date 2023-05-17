@@ -1,4 +1,4 @@
-<svg id='patternId' width='5120px' height='100%' xmlns='http://www.w3.org/2000/svg'>
+<svg width='5120' height='100%' xmlns='http://www.w3.org/2000/svg'>
     <defs>
         <pattern id='a' patternUnits='userSpaceOnUse' width='20' height='20'
             patternTransform='scale(5) rotate(45)'>

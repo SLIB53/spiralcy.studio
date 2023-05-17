@@ -68,22 +68,90 @@
     height: 100%;
   }
 
+  .thirds-container.underlay > .third > .thirds-separator {
+    width: 50px;
+    height: 100%;
+    position: relative;
+  }
+
+  .thirds-container.underlay > .first-third > .thirds-separator {
+    float: right;
+    right: -25px;
+  }
+
+  .thirds-container.underlay > .third-third > .thirds-separator {
+    float: left;
+    left: -25px;
+  }
+
   /* Color */
 
-  .thirds-container.underlay > .first-third {
+  .thirds-container.underlay > .first-third,
+  .thirds-container.underlay > .third-third {
     background-color: #2e0000;
-    background-image: url("./assets/global/spiralcy-hero-159f68e-crunch.png");
+    background-image: url("./assets/spiralcy-checkers-bg.svg");
     background-position: center;
-    background-size: cover;
   }
 
   .thirds-container.underlay > .second-third {
     background-color: #401010;
   }
 
-  .thirds-container.underlay > .third-third {
-    background-color: #2e0000;
-    background-image: url("./assets/spiralcy-checkers-bg.svg");
+  .thirds-separator {
+    background-image: url("./assets/spiralcy-checkers-sep.svg");
+    background-repeat: repeat-y;
     background-position: center;
+    overflow: visible;
+  }
+
+  /* Animation */
+
+  .thirds-container.underlay > .first-third {
+    animation-duration: 500ms;
+    animation-name: first-third-slidein;
+  }
+
+  @keyframes first-third-slidein {
+    from {
+      background-position-x: 47%;
+    }
+  }
+
+  .thirds-container.underlay > .third-third {
+    animation-duration: 500ms;
+    animation-name: third-third-slidein;
+  }
+
+  @keyframes third-third-slidein {
+    from {
+      background-position-x: 53%;
+    }
+  }
+
+  .thirds-container.underlay > .third > .thirds-separator {
+    animation-duration: 500ms;
+    animation-name: thirds-separator-slidein;
+  }
+
+  @keyframes thirds-separator-slidein {
+    from {
+      background-position-y: 47%;
+    }
+  }
+
+  #logo {
+    filter: blur(0px);
+    animation-duration: 500ms;
+    animation-name: blur-in-landscape;
+  }
+
+  @keyframes blur-in-landscape {
+    from {
+      filter: blur(100px);
+    }
+
+    to {
+      filter: blur(0px);
+    }
   }
 }
