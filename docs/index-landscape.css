@@ -33,7 +33,16 @@
     top: 38%;
     display: flex;
     flex-direction: column;
+    height: 62%;
     text-align: center;
+  }
+
+  .thirds-container.content > .third > section {
+    padding: 0rem 3rem 3rem 3rem;
+  }
+
+  .thirds-container.content > .third > section > *:first-child {
+    margin-top: 0;
   }
 
   .thirds-container.content > .first-third {
@@ -50,12 +59,19 @@
     right: 0;
   }
 
-  .thirds-container.content > .third > section {
-    width: 100%;
+  .thirds-container.content > .third-third > section > nav {
+    display: flex;
+    flex-direction: column;
+    margin: 0rem 3rem;
   }
 
-  .thirds-container.content > .third > section > *:first-child {
-    margin-top: 0;
+  .thirds-container.content > .third-third > section > nav > a {
+    margin: 0rem 0rem 2rem 0rem;
+    padding: 1rem;
+  }
+
+  .thirds-container.content > .third-third > section > nav > a:after {
+    padding: 0rem 0rem 0rem 1rem;
   }
 
   .thirds-container.underlay {
@@ -90,6 +106,14 @@
     Color
   */
 
+  .thirds-container.content > .third-third > section > nav > a {
+    color: #ffd3d3;
+  }
+
+  .thirds-container.content > .third-third > section > nav > a:after {
+    content: "↗";
+  }
+
   .thirds-container.underlay > .first-third {
     background-color: #2e0000;
     background-image: url("./assets/spiralcy-checkers-bg.svg");
@@ -105,9 +129,9 @@
 
   .thirds-container.underlay > .second-third {
     background-color: #401010;
-    border-width: 0;
+    border-width: 5px 5px 5px 0px;
     border-style: solid;
-    border-color: #2e0000;
+    border-color: #350400;
     border-top-right-radius: 20px;
     border-bottom-right-radius: 20px;
   }
