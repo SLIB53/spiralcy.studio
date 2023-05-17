@@ -1,4 +1,4 @@
-@media screen and (min-width: 89rem) {
+@media (orientation: landscape) {
   /* Layout */
 
   html {
@@ -86,54 +86,50 @@
 
   /* Color */
 
-  .thirds-container.underlay > .first-third,
-  .thirds-container.underlay > .third-third {
+  .thirds-container.underlay > .first-third {
     background-color: #2e0000;
     background-image: url("./assets/spiralcy-checkers-bg.svg");
     background-position: center;
+  }
+
+  .thirds-container.underlay > .third > .thirds-separator {
+    background-image: url("./assets/spiralcy-checkers-sep-v.svg");
+    background-repeat: repeat-y;
+    background-position: center;
+    overflow: visible;
   }
 
   .thirds-container.underlay > .second-third {
     background-color: #401010;
   }
 
-  .thirds-separator {
-    background-image: url("./assets/spiralcy-checkers-sep.svg");
-    background-repeat: repeat-y;
-    background-position: center;
-    overflow: visible;
+  .thirds-container.underlay > .third-third {
+    background-color: #2e0000;
   }
 
   /* Animation */
 
-  .thirds-container.underlay > .first-third {
-    animation-duration: 500ms;
-    animation-name: first-third-slidein;
+  * {
+    animation-fill-mode: backwards;
   }
 
-  @keyframes first-third-slidein {
+  .thirds-container.underlay > .first-third {
+    animation-duration: 500ms;
+    animation-name: first-third-slide;
+  }
+
+  @keyframes first-third-slide {
     from {
       background-position-x: 47%;
     }
   }
 
-  .thirds-container.underlay > .third-third {
-    animation-duration: 500ms;
-    animation-name: third-third-slidein;
-  }
-
-  @keyframes third-third-slidein {
-    from {
-      background-position-x: 53%;
-    }
-  }
-
   .thirds-container.underlay > .third > .thirds-separator {
     animation-duration: 500ms;
-    animation-name: thirds-separator-slidein;
+    animation-name: thirds-separator-slide;
   }
 
-  @keyframes thirds-separator-slidein {
+  @keyframes thirds-separator-slide {
     from {
       background-position-y: 47%;
     }

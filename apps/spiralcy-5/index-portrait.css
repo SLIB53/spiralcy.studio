@@ -1,4 +1,4 @@
-@media screen and (min-width: 13rem) and (max-width: 89rem) {
+@media (orientation: portrait) and (min-width: 13rem) {
   /* Layout */
 
   html {
@@ -30,12 +30,23 @@
   .thirds-container.content > .first-third > section > #logo {
     position: sticky;
     top: 38%;
-    margin: 0rem 0rem 3rem 0rem;
+    margin: 0rem 0rem 8rem 0rem;
+  }
+
+  .thirds-container.content > .thirds-separator {
+    z-index: 1;
+    position: relative;
+    height: 25px;
+    margin: -13px 0px 0px 0px;
+  }
+
+  .thirds-container.content > .thirds-separator + .third {
+    margin-top: -13px;
   }
 
   .thirds-container.content > .second-third {
     min-height: 62%;
-    padding: 3rem 0rem 8rem 0rem;
+    padding: 5rem 0rem 8rem 0rem;
   }
 
   .thirds-container.content > .second-third > section {
@@ -43,9 +54,10 @@
   }
 
   .thirds-container.content > .third-third {
-    bottom: 0;
-    padding: 1rem 0rem;
+    z-index: 2;
     position: fixed;
+    bottom: 0;
+    padding: 2rem 0rem;
   }
 
   /* Color */
@@ -60,6 +72,14 @@
     background-position: center;
   }
 
+  .thirds-container.content > .thirds-separator {
+    background-color: transparent;
+    background-image: url("./assets/spiralcy-checkers-sep-h.svg");
+    background-repeat: repeat-x;
+    background-position: center;
+    overflow: visible;
+  }
+
   .thirds-container.content > .second-third {
     background-color: #401010;
   }
@@ -68,32 +88,47 @@
     background-color: #2e0000;
   }
 
+  .thirds-container.underlay {
+    display: none;
+  }
+
   /* Animation */
+
+  * {
+    animation-fill-mode: backwards;
+  }
 
   .thirds-container.content > .first-third {
     animation-duration: 500ms;
-    animation-name: first-third-slidein;
+    animation-name: first-third-slide;
   }
 
-  @keyframes first-third-slidein {
+  @keyframes first-third-slide {
     from {
-      background-position-y: 47%;
+      background-position-x: 47%;
+    }
+  }
+
+  .thirds-container.content > .thirds-separator {
+    animation-duration: 500ms;
+    animation-name: thirds-separator-slide;
+  }
+
+  @keyframes thirds-separator-slide {
+    from {
+      background-position-x: 47%;
     }
   }
 
   #logo {
     filter: blur(0px);
     animation-duration: 500ms;
-    animation-name: blur-in-portrait;
+    animation-name: logo-blur-portrait;
   }
 
-  @keyframes blur-in-portrait {
+  @keyframes logo-blur-portrait {
     from {
       filter: blur(100px);
-    }
-
-    to {
-      filter: blur(0px);
     }
   }
 }
