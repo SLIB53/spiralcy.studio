@@ -138,7 +138,7 @@
   /* first third animation */
 
   .thirds-container.underlay > .first-third {
-    animation-duration: 500ms;
+    animation-duration: 1s;
     animation-name: first-third-slide-in-wide;
   }
 
@@ -152,7 +152,7 @@
 
   #logo {
     filter: blur(0px);
-    animation-duration: 500ms;
+    animation-duration: 1s;
     animation-name: blur-in-wide;
   }
 
@@ -169,7 +169,7 @@
   /* thirds seperator animation */
 
   .thirds-container.underlay > .third > .thirds-separator {
-    animation-duration: 500ms;
+    animation-duration: 1s;
     animation-name: thirds-separator-slide-in-wide;
   }
 
@@ -182,7 +182,7 @@
   /* second third animation */
 
   .thirds-container.underlay > .second-third {
-    animation-duration: 500ms;
+    animation-duration: 1s;
     animation-name: second-third-grow-in-wide;
   }
 
@@ -195,7 +195,7 @@
   /* second third sections animation */
 
   .thirds-container.content > .second-third > section {
-    animation-delay: 200ms;
+    animation-delay: 500ms;
     animation-duration: 500ms;
     animation-name: second-third-sections-fade-in-wide;
   }
@@ -214,6 +214,7 @@
   }
 
   .thirds-container.content > .third-third > section > nav > a {
+    animation-delay: 500ms;
     animation-duration: 500ms;
     animation-name: nav-links-fade-slide-in-wide;
   }

@@ -145,7 +145,7 @@
 
   #logo {
     filter: blur(0px);
-    animation-duration: 500ms;
+    animation-duration: 1s;
     animation-name: logo-blur-in-narrow;
   }
 
@@ -170,7 +170,7 @@
   /* thirds seperator animation */
 
   .thirds-container.content > .thirds-separator {
-    animation-duration: 500ms;
+    animation-duration: 1s;
     animation-name: thirds-separator-slide-in-narrow;
   }
 
@@ -195,7 +195,7 @@
   /* second third animation */
 
   .thirds-container.content > .second-third {
-    animation-duration: 500ms;
+    animation-duration: 1s;
     animation-name: second-third-grow-in-narrow;
   }
 
@@ -220,7 +220,7 @@
   /* second third sections animation */
 
   .thirds-container.content > .second-third > section {
-    animation-delay: 200ms;
+    animation-delay: 500ms;
     animation-duration: 500ms;
     animation-name: second-third-sections-fade-in-narrow;
   }
