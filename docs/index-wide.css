@@ -104,14 +104,6 @@
     Color
   */
 
-  .thirds-container.content > .third-third > section > nav > a {
-    color: #ffd3d3;
-  }
-
-  .thirds-container.content > .third-third > section > nav > a:after {
-    content: "↗";
-  }
-
   .thirds-container.underlay > .first-third {
     background-color: #2e0000;
     background-image: url("./assets/spiralcy-checkers-bg.svg");
@@ -141,18 +133,14 @@
     Animation
   */
 
-  * {
-    animation-fill-mode: backwards;
-  }
-
   /* first third animation */
 
   .thirds-container.underlay > .first-third {
     animation-duration: 500ms;
-    animation-name: first-third-slide;
+    animation-name: first-third-slide-in-wide;
   }
 
-  @keyframes first-third-slide {
+  @keyframes first-third-slide-in-wide {
     from {
       background-position-x: 47%;
     }
@@ -162,10 +150,10 @@
 
   .thirds-container.underlay > .third > .thirds-separator {
     animation-duration: 500ms;
-    animation-name: thirds-separator-slide;
+    animation-name: thirds-separator-slide-in-wide;
   }
 
-  @keyframes thirds-separator-slide {
+  @keyframes thirds-separator-slide-in-wide {
     from {
       background-position-y: 47%;
     }
@@ -176,10 +164,10 @@
   #logo {
     filter: blur(0px);
     animation-duration: 500ms;
-    animation-name: blur-in-landscape;
+    animation-name: blur-in-wide;
   }
 
-  @keyframes blur-in-landscape {
+  @keyframes blur-in-wide {
     from {
       filter: blur(100px);
     }
