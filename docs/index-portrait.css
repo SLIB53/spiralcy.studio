@@ -65,16 +65,20 @@
 
   .thirds-container.content > .third-third > section > nav {
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     justify-content: center;
   }
 
   .thirds-container.content > .third-third > section > nav > a {
-    padding: 0rem 1rem;
+    padding: 1rem;
+  }
+
+  .thirds-container.content > .third-third > section > nav > a:first-child {
+    padding-top: 0rem;
   }
 
   .thirds-container.content > .third-third > section > nav > a:after {
-    padding-left: 1rem;
+    padding: 0rem 0rem 0rem 1rem;
   }
 
   /*
