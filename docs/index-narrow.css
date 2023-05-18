@@ -39,6 +39,7 @@
   .thirds-container.content > .thirds-separator {
     z-index: 1;
     position: relative;
+    display: block;
     height: 25px;
     margin: -13px 0px 0px 0px;
   }
@@ -140,6 +141,32 @@
     }
   }
 
+  /* logo animation */
+
+  #logo {
+    filter: blur(0px);
+    animation-duration: 500ms;
+    animation-name: logo-blur-in-narrow;
+  }
+
+  @keyframes logo-blur-in-narrow {
+    from {
+      filter: blur(100px);
+    }
+  }
+
+  @media (orientation: portrait) {
+    #logo {
+      animation-name: logo-blur-in-portrait;
+    }
+
+    @keyframes logo-blur-in-portrait {
+      from {
+        filter: blur(100px);
+      }
+    }
+  }
+
   /* thirds seperator animation */
 
   .thirds-container.content > .thirds-separator {
@@ -165,28 +192,60 @@
     }
   }
 
-  /* logo animation */
+  /* second third animation */
 
-  #logo {
-    filter: blur(0px);
+  .thirds-container.content > .second-third > section {
+    animation-delay: 200ms;
     animation-duration: 500ms;
-    animation-name: logo-blur-in-narrow;
+    animation-name: second-third-fade-in-narrow;
   }
 
-  @keyframes logo-blur-in-narrow {
+  @keyframes second-third-fade-in-narrow {
     from {
-      filter: blur(100px);
+      opacity: 0;
     }
   }
 
   @media (orientation: portrait) {
-    #logo {
-      animation-name: logo-blur-in-portrait;
+    .thirds-container.content > .second-third > section {
+      animation-name: second-third-fade-in-portrait;
     }
 
-    @keyframes logo-blur-in-portrait {
+    @keyframes second-third-fade-in-portrait {
       from {
-        filter: blur(100px);
+        opacity: 0;
+      }
+    }
+  }
+
+  /* nav link animation */
+
+  /* HACK: prevents animation from affecting layout */
+  #nav-links {
+    overflow-x: hidden;
+  }
+
+  .thirds-container.content > .third-third > section > nav > a {
+    animation-duration: 500ms;
+    animation-name: nav-links-fade-slide-in-narrow;
+  }
+
+  @keyframes nav-links-fade-slide-in-narrow {
+    from {
+      opacity: 0;
+      transform: translateX(50px);
+    }
+  }
+
+  @media (orientation: portrait) {
+    .thirds-container.content > .third-third > section > nav > a {
+      animation-name: nav-links-fade-slide-in-portrait;
+    }
+  
+    @keyframes nav-links-fade-slide-in-portrait {
+      from {
+        opacity: 0;
+        transform: translateX(50px);
       }
     }
   }
