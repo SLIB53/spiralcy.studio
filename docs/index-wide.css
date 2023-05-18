@@ -120,10 +120,11 @@
 
   .thirds-container.underlay > .second-third {
     background-color: #401010;
-    border-width: 5px 5px 0px 0px;
+    border-width: 0px 5px 0px 0px;
     border-style: solid;
     border-color: #350400;
     border-top-right-radius: 20px;
+    border-bottom-right-radius: 20px;
   }
 
   .thirds-container.underlay > .third-third {
@@ -178,13 +179,28 @@
     }
   }
 
+  /* second third animation */
+
+  .thirds-container.underlay > .second-third {
+    animation-duration: 500ms;
+    animation-name: second-third-grow-in-wide;
+  }
+
+  @keyframes second-third-grow-in-wide {
+    from {
+      border-width: 0px;
+    }
+  }
+
+  /* second third sections animation */
+
   .thirds-container.content > .second-third > section {
     animation-delay: 200ms;
     animation-duration: 500ms;
-    animation-name: second-third-fade-in-wide;
+    animation-name: second-third-sections-fade-in-wide;
   }
 
-  @keyframes second-third-fade-in-wide {
+  @keyframes second-third-sections-fade-in-wide {
     from {
       opacity: 0;
     }

@@ -194,13 +194,38 @@
 
   /* second third animation */
 
+  .thirds-container.content > .second-third {
+    animation-duration: 500ms;
+    animation-name: second-third-grow-in-narrow;
+  }
+
+  @keyframes second-third-grow-in-narrow {
+    from {
+      border-width: 0px;
+    }
+  }
+
+  @media (orientation: portrait) {
+    .thirds-container.content > .second-third {
+      animation-name: second-third-grow-in-portrait;
+    }
+
+    @keyframes second-third-grow-in-portrait {
+      from {
+        border-width: 0px;
+      }
+    }
+  }
+
+  /* second third sections animation */
+
   .thirds-container.content > .second-third > section {
     animation-delay: 200ms;
     animation-duration: 500ms;
-    animation-name: second-third-fade-in-narrow;
+    animation-name: second-third-sections-fade-in-narrow;
   }
 
-  @keyframes second-third-fade-in-narrow {
+  @keyframes second-third-sections-fade-in-narrow {
     from {
       opacity: 0;
     }
@@ -208,10 +233,10 @@
 
   @media (orientation: portrait) {
     .thirds-container.content > .second-third > section {
-      animation-name: second-third-fade-in-portrait;
+      animation-name: second-third-sections-fade-in-portrait;
     }
 
-    @keyframes second-third-fade-in-portrait {
+    @keyframes second-third-sections-fade-in-portrait {
       from {
         opacity: 0;
       }
