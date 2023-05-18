@@ -17,6 +17,7 @@
 
   .thirds-container.content > .third {
     width: 100%;
+    min-height: 21rem;
     text-align: center;
   }
 
