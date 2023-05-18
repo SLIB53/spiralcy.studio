@@ -62,7 +62,6 @@
   .thirds-container.content > .third-third > section > nav {
     display: flex;
     flex-direction: column;
-    margin: 0rem 3rem;
   }
 
   .thirds-container.content > .third-third > section > nav > a {
