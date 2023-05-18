@@ -119,7 +119,7 @@
   /* first third animation */
 
   .thirds-container.content > .first-third {
-    animation-duration: 500ms;
+    animation-duration: 1s;
     animation-name: first-third-slide-in-narrow;
   }
 
@@ -145,13 +145,25 @@
 
   #logo {
     filter: blur(0px);
-    animation-duration: 1s;
+    animation-duration: 600ms;
     animation-name: logo-blur-in-narrow;
   }
 
   @keyframes logo-blur-in-narrow {
     from {
+      filter: blur(1000px);
+    }
+
+    38% {
       filter: blur(100px);
+    }
+
+    64%{
+      filter: blur(10px);
+    }
+
+    to {
+      filter: blur(0px);
     }
   }
 
@@ -162,7 +174,19 @@
 
     @keyframes logo-blur-in-portrait {
       from {
+        filter: blur(1000px);
+      }
+  
+      38% {
         filter: blur(100px);
+      }
+  
+      64%{
+        filter: blur(10px);
+      }
+  
+      to {
+        filter: blur(0px);
       }
     }
   }
@@ -220,8 +244,8 @@
   /* second third sections animation */
 
   .thirds-container.content > .second-third > section {
-    animation-delay: 500ms;
-    animation-duration: 500ms;
+    animation-delay: 600ms;
+    animation-duration: 1s;
     animation-name: second-third-sections-fade-in-narrow;
   }
 
@@ -251,7 +275,7 @@
   }
 
   .thirds-container.content > .third-third > section > nav > a {
-    animation-duration: 500ms;
+    animation-duration: 600ms;
     animation-name: nav-links-fade-slide-in-narrow;
   }
 

@@ -152,13 +152,21 @@
 
   #logo {
     filter: blur(0px);
-    animation-duration: 1s;
+    animation-duration: 600ms;
     animation-name: blur-in-wide;
   }
 
   @keyframes blur-in-wide {
     from {
+      filter: blur(1000px);
+    }
+
+    38% {
       filter: blur(100px);
+    }
+
+    64% {
+      filter: blur(10px);
     }
 
     to {
@@ -195,8 +203,8 @@
   /* second third sections animation */
 
   .thirds-container.content > .second-third > section {
-    animation-delay: 500ms;
-    animation-duration: 500ms;
+    animation-delay: 600ms;
+    animation-duration: 1s;
     animation-name: second-third-sections-fade-in-wide;
   }
 
@@ -214,8 +222,8 @@
   }
 
   .thirds-container.content > .third-third > section > nav > a {
-    animation-delay: 500ms;
-    animation-duration: 500ms;
+    animation-delay: 1s;
+    animation-duration: 600ms;
     animation-name: nav-links-fade-slide-in-wide;
   }
 
