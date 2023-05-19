@@ -1,0 +1,35 @@
+/*
+  Layout
+*/
+
+.thirds-separator {
+  display: none;
+}
+
+/*
+  Animation
+*/
+
+* {
+  animation-fill-mode: backwards;
+}
+
+/*
+  Color
+*/
+
+#logo {
+  color: #ffd3d3;
+}
+
+.thirds-container.content > .third-third > section > nav > a {
+  color: #ffd3d3;
+}
+
+.thirds-container.content > .third-third > section > nav > a:after {
+  content: "↗";
+}
+
+.thirds-container.underlay {
+  display: none;
+}

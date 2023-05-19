@@ -1,0 +1,50 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Emoji:wght@400;500;600;700&family=Poltawski+Nowy:ital,wght@0,500;0,600;0,700;1,400;1,500;1,600;1,700&family=Sofia&display=swap');
+
+/* Text */
+
+* {
+  font-family: "Poltawski Nowy", 'Noto Emoji', serif;
+}
+
+h1 {
+  font-family: "Sofia", "Poltawski Nowy", 'Noto Emoji', serif;
+  font-size: 3em;
+}
+
+h2 {
+  font-size: 1em;
+  font-variant: small-caps;
+}
+
+/* Color */
+
+/*
+    Spiralcy 5
+
+    Black Point:     2e0000
+    Extra Dark:      350400
+    Dark:            401010
+    Neutral:         8f2b2b
+    Light:           cd625b
+    White Point:     ffd3d3
+*/
+
+* {
+  color: #cd625b;
+}
+
+body {
+  background-color: #2e0000;
+}
+
+h1 {
+  color: #ffd3d3;
+}
+
+h2 {
+  color: #8f2b2b;
+}
+
+nav > a {
+  text-decoration: none;
+}

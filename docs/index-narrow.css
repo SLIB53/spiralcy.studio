@@ -1,0 +1,301 @@
+@media screen and (min-width: 21rem) and (max-width: 89rem) {
+  /*
+    Layout
+  */
+
+  html {
+    height: 100%;
+  }
+
+  body {
+    margin: 0;
+  }
+
+  .thirds-container.content {
+    height: 62%;
+  }
+
+  .thirds-container.content > .third {
+    width: 100%;
+    min-height: 21rem;
+    height: 100%;
+    text-align: center;
+  }
+
+  .thirds-container.content > .third > section > *:first-child {
+    margin-top: 0;
+  }
+
+  .thirds-container.content > .first-third > section {
+    height: 100%;
+  }
+
+  .thirds-container.content > .first-third > section > #logo {
+    position: sticky;
+    top: 38%;
+    margin: 0rem 0rem 8rem 0rem;
+  }
+
+  .thirds-container.content > .thirds-separator {
+    z-index: 1;
+    position: relative;
+    display: block;
+    height: 25px;
+    margin: -13px 0px 0px 0px;
+  }
+
+  .thirds-container.content > .thirds-separator + .third {
+    margin-top: -13px;
+  }
+
+  .thirds-container.content > .second-third {
+    padding: 8rem 0rem;
+  }
+
+  .thirds-container.content > .second-third > section {
+    padding: 0rem 5rem 3rem 5rem;
+  }
+
+  .thirds-container.content > .second-third > section:last-child {
+    padding-bottom: 0rem;
+  }
+
+  .thirds-container.content > .third-third {
+    padding: 8rem 0rem 0rem 0rem;
+  }
+
+  .thirds-container.content > .third-third > section > nav {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .thirds-container.content > .third-third > section > nav > a {
+    padding: 1rem;
+  }
+
+  .thirds-container.content > .third-third > section > nav > a:first-child {
+    padding-top: 0rem;
+  }
+
+  .thirds-container.content > .third-third > section > nav > a:after {
+    padding: 0rem 0rem 0rem 1rem;
+  }
+
+  /*
+    Color
+  */
+
+  .thirds-container.content > .first-third {
+    background-color: #2e0000;
+    background-image: url("./assets/spiralcy-checkers-bg.svg");
+    background-position: center;
+  }
+
+  .thirds-container.content > .thirds-separator {
+    background-color: transparent;
+    background-image: url("./assets/spiralcy-checkers-sep-h.svg");
+    background-repeat: repeat-x;
+    background-position: center;
+    overflow: visible;
+  }
+
+  .thirds-container.content > .second-third {
+    background-color: #401010;
+    border-width: 0px 0px 5px 0px;
+    border-style: solid;
+    border-color: #350400;
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+  }
+
+  .thirds-container.content > .third-third {
+    background-color: #2e0000;
+  }
+
+  /*
+    Animation
+  */
+
+  /* first third animation */
+
+  .thirds-container.content > .first-third {
+    animation-duration: 1s;
+    animation-name: first-third-slide-in-narrow;
+  }
+
+  @keyframes first-third-slide-in-narrow {
+    from {
+      background-position-x: 47%;
+    }
+  }
+
+  @media screen and (orientation: portrait) {
+    .thirds-container.content > .first-third {
+      animation-name: first-third-slide-in-portrait;
+    }
+
+    @keyframes first-third-slide-in-portrait {
+      from {
+        background-position-x: 47%;
+      }
+    }
+  }
+
+  /* logo animation */
+
+  #logo {
+    filter: blur(0px);
+    animation-duration: 600ms;
+    animation-name: logo-blur-in-narrow;
+  }
+
+  @keyframes logo-blur-in-narrow {
+    from {
+      filter: blur(1000px);
+    }
+
+    38% {
+      filter: blur(100px);
+    }
+
+    64%{
+      filter: blur(10px);
+    }
+
+    to {
+      filter: blur(0px);
+    }
+  }
+
+  @media (orientation: portrait) {
+    #logo {
+      animation-name: logo-blur-in-portrait;
+    }
+
+    @keyframes logo-blur-in-portrait {
+      from {
+        filter: blur(1000px);
+      }
+  
+      38% {
+        filter: blur(100px);
+      }
+  
+      64%{
+        filter: blur(10px);
+      }
+  
+      to {
+        filter: blur(0px);
+      }
+    }
+  }
+
+  /* thirds seperator animation */
+
+  .thirds-container.content > .thirds-separator {
+    animation-duration: 1s;
+    animation-name: thirds-separator-slide-in-narrow;
+  }
+
+  @keyframes thirds-separator-slide-in-narrow {
+    from {
+      background-position-x: 47%;
+    }
+  }
+
+  @media (orientation: portrait) {
+    .thirds-container.content > .thirds-separator {
+      animation-name: thirds-separator-slide-in-portrait;
+    }
+
+    @keyframes thirds-separator-slide-in-portrait {
+      from {
+        background-position-x: 47%;
+      }
+    }
+  }
+
+  /* second third animation */
+
+  .thirds-container.content > .second-third {
+    animation-duration: 1s;
+    animation-name: second-third-grow-in-narrow;
+  }
+
+  @keyframes second-third-grow-in-narrow {
+    from {
+      border-width: 0px;
+    }
+  }
+
+  @media (orientation: portrait) {
+    .thirds-container.content > .second-third {
+      animation-name: second-third-grow-in-portrait;
+    }
+
+    @keyframes second-third-grow-in-portrait {
+      from {
+        border-width: 0px;
+      }
+    }
+  }
+
+  /* second third sections animation */
+
+  .thirds-container.content > .second-third > section {
+    animation-delay: 600ms;
+    animation-duration: 1s;
+    animation-name: second-third-sections-fade-in-narrow;
+  }
+
+  @keyframes second-third-sections-fade-in-narrow {
+    from {
+      opacity: 0;
+    }
+  }
+
+  @media (orientation: portrait) {
+    .thirds-container.content > .second-third > section {
+      animation-name: second-third-sections-fade-in-portrait;
+    }
+
+    @keyframes second-third-sections-fade-in-portrait {
+      from {
+        opacity: 0;
+      }
+    }
+  }
+
+  /* nav link animation */
+
+  /* HACK: prevents animation from affecting layout */
+  #nav-links {
+    overflow-x: hidden;
+  }
+
+  .thirds-container.content > .third-third > section > nav > a {
+    animation-duration: 600ms;
+    animation-name: nav-links-fade-slide-in-narrow;
+  }
+
+  @keyframes nav-links-fade-slide-in-narrow {
+    from {
+      opacity: 0;
+      transform: translateX(50px);
+    }
+  }
+
+  @media (orientation: portrait) {
+    .thirds-container.content > .third-third > section > nav > a {
+      animation-name: nav-links-fade-slide-in-portrait;
+    }
+  
+    @keyframes nav-links-fade-slide-in-portrait {
+      from {
+        opacity: 0;
+        transform: translateX(50px);
+      }
+    }
+  }
+}
