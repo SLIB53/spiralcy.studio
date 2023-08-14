@@ -1,1 +1,1 @@
-# Spiralcy.Studio
+# Spiralcy
