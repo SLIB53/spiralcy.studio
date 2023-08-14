@@ -12,15 +12,15 @@
   }
 
   .thirds-container > .first-third {
-    width: 33%;
+    width: 19%;
   }
 
   .thirds-container > .second-third {
-    width: 34%;
+    width: 62%;
   }
 
   .thirds-container > .third-third {
-    width: 33%;
+    width: 19%;
   }
 
   .thirds-container.content {
