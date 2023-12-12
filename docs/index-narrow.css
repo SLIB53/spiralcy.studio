@@ -86,7 +86,7 @@
   */
 
   .thirds-container.content > .first-third {
-    background-color: #2e0000;
+    background-color: var(--spiralcy-5-black-point);
     background-image: url("./assets/spiralcy-checkers-bg.svg");
     background-position: center;
   }
@@ -100,16 +100,16 @@
   }
 
   .thirds-container.content > .second-third {
-    background-color: #401010;
+    background-color: var(--spiralcy-5-dark);
     border-width: 0px 0px 5px 0px;
     border-style: solid;
-    border-color: #350400;
+    border-color: var(--spiralcy-5-extra-dark);
     border-bottom-left-radius: 20px;
     border-bottom-right-radius: 20px;
   }
 
   .thirds-container.content > .third-third {
-    background-color: #2e0000;
+    background-color: var(--spiralcy-5-black-point);
   }
 
   /*
