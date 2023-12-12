@@ -18,31 +18,29 @@ h2 {
 
 /* Color */
 
-/*
-    Spiralcy 5
-
-    Black Point:     2e0000
-    Extra Dark:      350400
-    Dark:            401010
-    Neutral:         8f2b2b
-    Light:           cd625b
-    White Point:     ffd3d3
-*/
+:root {
+  --spiralcy-5-black-point: #2e0000;
+  --spiralcy-5-extra-dark: #350400;
+  --spiralcy-5-dark: #401010;
+  --spiralcy-5-neutral: #8f2b2b;
+  --spiralcy-5-light: #cd625b;
+  --spiralcy-5-white-point: #ffd3d3;
+}
 
 * {
-  color: #cd625b;
+  color: var(--spiralcy-5-light);
 }
 
 body {
-  background-color: #2e0000;
+  background-color: var(--spiralcy-5-black-point);
 }
 
 h1 {
-  color: #ffd3d3;
+  color: var(--spiralcy-5-white-point);
 }
 
 h2 {
-  color: #8f2b2b;
+  color: var(--spiralcy-5-neutral);
 }
 
 nav > a {

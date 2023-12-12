@@ -19,11 +19,11 @@
 */
 
 #logo {
-  color: #ffd3d3;
+  color: var(--spiralcy-5-white-point);
 }
 
 .thirds-container.content > .third-third > section > nav > a {
-  color: #ffd3d3;
+  color: var(--spiralcy-5-white-point);
 }
 
 .thirds-container.content > .third-third > section > nav > a:after {
