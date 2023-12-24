@@ -1,4 +1,11 @@
 #
+# Visual Studio Code
+#
+
+*.code-workspace
+
+
+#
 # macOS
 #
 
