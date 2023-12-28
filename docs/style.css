@@ -1,18 +1,18 @@
-@import url('https://fonts.googleapis.com/css2?family=Noto+Emoji:wght@400;500;600;700&family=Poltawski+Nowy:ital,wght@0,500;0,600;0,700;1,400;1,500;1,600;1,700&family=Sofia&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Noto+Emoji:wght@400;500;600;700&family=Poltawski+Nowy:ital,wght@0,500;0,600;0,700;1,400;1,500;1,600;1,700&family=Sofia&display=swap");
 
 /* Text */
 
 * {
-  font-family: "Poltawski Nowy", 'Noto Emoji', serif;
+  font-family: "Poltawski Nowy", "Noto Emoji", serif;
 }
 
 h1 {
-  font-family: "Sofia", "Poltawski Nowy", 'Noto Emoji', serif;
-  font-size: 3em;
+  font-family: "Sofia", "Poltawski Nowy", "Noto Emoji", serif;
+  font-size: xxx-large;
 }
 
 h2 {
-  font-size: 1em;
+  font-size: medium;
   font-variant: small-caps;
 }
 
@@ -41,8 +41,4 @@ h1 {
 
 h2 {
   color: var(--spiralcy-5-neutral);
-}
-
-nav > a {
-  text-decoration: none;
 }

@@ -158,7 +158,7 @@
       filter: blur(100px);
     }
 
-    64%{
+    64% {
       filter: blur(10px);
     }
 
@@ -176,15 +176,15 @@
       from {
         filter: blur(1000px);
       }
-  
+
       38% {
         filter: blur(100px);
       }
-  
-      64%{
+
+      64% {
         filter: blur(10px);
       }
-  
+
       to {
         filter: blur(0px);
       }
@@ -290,7 +290,7 @@
     .thirds-container.content > .third-third > section > nav > a {
       animation-name: nav-links-fade-slide-in-portrait;
     }
-  
+
     @keyframes nav-links-fade-slide-in-portrait {
       from {
         opacity: 0;

@@ -6,12 +6,30 @@
   display: none;
 }
 
+.thirds-container.content > .third-third > section > nav > a {
+  display: flex;
+  margin: auto;
+}
+
+.thirds-container.content > .third-third > section > nav > a .nav-link-text {
+  margin-right: 15px;
+}
+
 /*
   Animation
 */
 
 * {
   animation-fill-mode: backwards;
+}
+
+/*
+  Text
+*/
+
+.thirds-container.content > .third-third > section > nav > a .nav-link-text {
+  font-family: "Sofia", "Poltawski Nowy", "Noto Emoji", serif;
+  font-size: smaller;
 }
 
 /*
@@ -23,11 +41,11 @@
 }
 
 .thirds-container.content > .third-third > section > nav > a {
-  color: var(--spiralcy-5-white-point);
+  text-decoration: none;
 }
 
-.thirds-container.content > .third-third > section > nav > a:after {
-  content: "↗";
+.thirds-container.content > .third-third > section > nav > a .nav-link-text {
+  color: var(--spiralcy-5-white-point);
 }
 
 .thirds-container.underlay {
