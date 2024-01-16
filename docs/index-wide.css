@@ -38,6 +38,10 @@
   }
 
   .thirds-container.content > .third > section {
+    padding: 3rem;
+  }
+
+  .thirds-container.content > .third > section:first-child {
     padding: 0rem 3rem 3rem 3rem;
   }
 
@@ -70,6 +74,13 @@
 
   .thirds-container.content > .third-third > section > nav > a:after {
     padding: 0rem 0rem 0rem 1rem;
+  }
+
+  .thirds-container.content > .third-third #fine-print {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    padding: 0 0 3rem 0;
   }
 
   .thirds-container.underlay {
@@ -217,11 +228,11 @@
   /* nav link animation */
 
   /* HACK: prevents animation from affecting layout */
-  #nav-links {
+  .thirds-container.content > .third-third > #nav-links {
     overflow-x: hidden;
   }
 
-  .thirds-container.content > .third-third > section > nav > a {
+  .thirds-container.content > .third-third > #nav-links > nav > a {
     animation-delay: 1s;
     animation-duration: 600ms;
     animation-name: nav-links-fade-slide-in-wide;
@@ -231,6 +242,20 @@
     from {
       opacity: 0;
       transform: translateX(50px);
+    }
+  }
+
+  /* fine print animation */
+
+  .thirds-container.content > .third-third > #fine-print {
+    animation-delay: 1s;
+    animation-duration: 3600ms;
+    animation-name: fine-print-fade-in-wide;
+  }
+
+  @keyframes fine-print-fade-in-wide {
+    from {
+      opacity: 0;
     }
   }
 }

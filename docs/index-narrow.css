@@ -81,6 +81,14 @@
     padding: 0rem 0rem 0rem 1rem;
   }
 
+  .thirds-container.content > .third-third > section {
+    padding: 0 0 3rem 0;
+  }
+
+  .thirds-container.content > .third-third > section:last-child {
+    padding: 0;
+  }
+
   /*
     Color
   */
@@ -295,6 +303,31 @@
       from {
         opacity: 0;
         transform: translateX(50px);
+      }
+    }
+  }
+
+  /* fine print animation */
+
+  .thirds-container.content > .third-third > #fine-print {
+    animation-duration: 3600ms;
+    animation-name: fine-print-fade-in-narrow;
+  }
+
+  @keyframes fine-print-fade-in-narrow {
+    from {
+      opacity: 0;
+    }
+  }
+
+  @media (orientation: portrait) {
+    .thirds-container.content > .third-third > #fine-print {
+      animation-name: fine-print-fade-in-portrait;
+    }
+
+    @keyframes fine-print-fade-in-portrait {
+      from {
+        opacity: 0;
       }
     }
   }

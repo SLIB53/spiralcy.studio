@@ -27,9 +27,16 @@
   Text
 */
 
-.thirds-container.content > .third-third > section > nav > a .nav-link-text {
+.thirds-container.content > .third-third * {
   font-family: "Sofia", "Poltawski Nowy", "Noto Emoji", serif;
+}
+
+.thirds-container.content > .third-third > section > nav .nav-link-text {
   font-size: smaller;
+}
+
+.thirds-container.content > .third-third > section > nav > a {
+  text-decoration: none;
 }
 
 /*
@@ -40,12 +47,12 @@
   color: var(--spiralcy-5-white-point);
 }
 
-.thirds-container.content > .third-third > section > nav > a {
-  text-decoration: none;
+.thirds-container.content > .third-third > section * {
+  color: var(--spiralcy-5-white-point);
 }
 
-.thirds-container.content > .third-third > section > nav > a .nav-link-text {
-  color: var(--spiralcy-5-white-point);
+.thirds-container.content > .third-third > #fine-print {
+  opacity: 0.1;
 }
 
 .thirds-container.underlay {
