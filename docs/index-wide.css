@@ -1,0 +1,236 @@
+@media screen and (min-width: 89rem) {
+  /*
+    Layout
+  */
+
+  html {
+    height: 100%;
+  }
+
+  body {
+    margin: 0;
+  }
+
+  .thirds-container > .first-third {
+    width: 25%;
+  }
+
+  .thirds-container > .second-third {
+    width: 50%;
+  }
+
+  .thirds-container > .third-third {
+    width: 25%;
+  }
+
+  .thirds-container.content {
+    display: flex;
+    height: 100%;
+    justify-content: center;
+  }
+
+  .thirds-container.content > .third {
+    top: 38%;
+    display: flex;
+    flex-direction: column;
+    height: 62%;
+    text-align: center;
+  }
+
+  .thirds-container.content > .third > section {
+    padding: 0rem 3rem 3rem 3rem;
+  }
+
+  .thirds-container.content > .third > section > *:first-child {
+    margin-top: 0;
+  }
+
+  .thirds-container.content > .first-third {
+    position: fixed;
+    left: 0;
+  }
+
+  .thirds-container.content > .second-third {
+    position: relative;
+  }
+
+  .thirds-container.content > .third-third {
+    position: fixed;
+    right: 0;
+  }
+
+  .thirds-container.content > .third-third > section > nav {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .thirds-container.content > .third-third > section > nav > a {
+    padding: 1rem;
+  }
+
+  .thirds-container.content > .third-third > section > nav > a:after {
+    padding: 0rem 0rem 0rem 1rem;
+  }
+
+  .thirds-container.underlay {
+    z-index: -1;
+    position: fixed;
+    display: flex;
+    width: 100%;
+    height: 100%;
+  }
+
+  .thirds-container.underlay > .third {
+    height: 100%;
+  }
+
+  .thirds-container.underlay > .third > .thirds-separator {
+    width: 50px;
+    height: 100%;
+    position: relative;
+  }
+
+  .thirds-container.underlay > .first-third > .thirds-separator {
+    float: right;
+    right: -25px;
+  }
+
+  .thirds-container.underlay > .third-third > .thirds-separator {
+    float: left;
+    left: -25px;
+  }
+
+  /*
+    Color
+  */
+
+  .thirds-container.underlay > .first-third {
+    background-color: var(--spiralcy-5-black-point);
+    background-image: url("./assets/spiralcy-checkers-bg.svg");
+    background-position: center;
+  }
+
+  .thirds-container.underlay > .third > .thirds-separator {
+    display: block;
+    background-image: url("./assets/spiralcy-checkers-sep-v.svg");
+    background-repeat: repeat-y;
+    background-position: center;
+    overflow: visible;
+  }
+
+  .thirds-container.underlay > .second-third {
+    background-color: var(--spiralcy-5-dark);
+    border-width: 0px 5px 0px 0px;
+    border-style: solid;
+    border-color: var(--spiralcy-5-extra-dark);
+    border-top-right-radius: 20px;
+    border-bottom-right-radius: 20px;
+  }
+
+  .thirds-container.underlay > .third-third {
+    background-color: var(--spiralcy-5-black-point);
+  }
+
+  /*
+    Animation
+  */
+
+  /* first third animation */
+
+  .thirds-container.underlay > .first-third {
+    animation-duration: 1s;
+    animation-name: first-third-slide-in-wide;
+  }
+
+  @keyframes first-third-slide-in-wide {
+    from {
+      background-position-x: 47%;
+    }
+  }
+
+  /* logo animation */
+
+  #logo {
+    filter: blur(0px);
+    animation-duration: 600ms;
+    animation-name: blur-in-wide;
+  }
+
+  @keyframes blur-in-wide {
+    from {
+      filter: blur(1000px);
+    }
+
+    38% {
+      filter: blur(100px);
+    }
+
+    64% {
+      filter: blur(10px);
+    }
+
+    to {
+      filter: blur(0px);
+    }
+  }
+
+  /* thirds seperator animation */
+
+  .thirds-container.underlay > .third > .thirds-separator {
+    animation-duration: 1s;
+    animation-name: thirds-separator-slide-in-wide;
+  }
+
+  @keyframes thirds-separator-slide-in-wide {
+    from {
+      background-position-y: 47%;
+    }
+  }
+
+  /* second third animation */
+
+  .thirds-container.underlay > .second-third {
+    animation-duration: 1s;
+    animation-name: second-third-grow-in-wide;
+  }
+
+  @keyframes second-third-grow-in-wide {
+    from {
+      border-width: 0px;
+    }
+  }
+
+  /* second third sections animation */
+
+  .thirds-container.content > .second-third > section {
+    animation-delay: 600ms;
+    animation-duration: 1s;
+    animation-name: second-third-sections-fade-in-wide;
+  }
+
+  @keyframes second-third-sections-fade-in-wide {
+    from {
+      opacity: 0;
+    }
+  }
+
+  /* nav link animation */
+
+  /* HACK: prevents animation from affecting layout */
+  #nav-links {
+    overflow-x: hidden;
+  }
+
+  .thirds-container.content > .third-third > section > nav > a {
+    animation-delay: 1s;
+    animation-duration: 600ms;
+    animation-name: nav-links-fade-slide-in-wide;
+  }
+
+  @keyframes nav-links-fade-slide-in-wide {
+    from {
+      opacity: 0;
+      transform: translateX(50px);
+    }
+  }
+}

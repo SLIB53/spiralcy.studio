@@ -1,0 +1,44 @@
+@import url("https://fonts.googleapis.com/css2?family=Noto+Emoji:wght@400;500;600;700&family=Poltawski+Nowy:ital,wght@0,500;0,600;0,700;1,400;1,500;1,600;1,700&family=Sofia&display=swap");
+
+/* Text */
+
+* {
+  font-family: "Poltawski Nowy", "Noto Emoji", serif;
+}
+
+h1 {
+  font-family: "Sofia", "Poltawski Nowy", "Noto Emoji", serif;
+  font-size: xxx-large;
+}
+
+h2 {
+  font-size: medium;
+  font-variant: small-caps;
+}
+
+/* Color */
+
+:root {
+  --spiralcy-5-black-point: #2e0000;
+  --spiralcy-5-extra-dark: #350400;
+  --spiralcy-5-dark: #401010;
+  --spiralcy-5-neutral: #8f2b2b;
+  --spiralcy-5-light: #cd625b;
+  --spiralcy-5-white-point: #ffd3d3;
+}
+
+* {
+  color: var(--spiralcy-5-light);
+}
+
+body {
+  background-color: var(--spiralcy-5-black-point);
+}
+
+h1 {
+  color: var(--spiralcy-5-white-point);
+}
+
+h2 {
+  color: var(--spiralcy-5-neutral);
+}
